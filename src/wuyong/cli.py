@@ -155,6 +155,9 @@ def cmd_bootstrap(args: argparse.Namespace, cfg: Config) -> int:
 
 def cmd_monitor(args: argparse.Namespace, cfg: Config) -> int:
     ensure_state_dirs(cfg)
+    if getattr(args, "daemon", False):
+        from .daemon import cmd_daemon_monitor
+        return cmd_daemon_monitor(args, cfg)
     fixture_html = None
     if args.fixture:
         fixture_html = Path(args.fixture).read_text(encoding="utf-8")
