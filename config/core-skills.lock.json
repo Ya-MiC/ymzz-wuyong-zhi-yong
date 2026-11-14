@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "updated_at": "2026-11-14T08:00:00Z",
+  "notes": "核心源必須安裝。審計狀態取自 skills.sh find-skills 頁面（https://www.skills.sh/vercel-labs/skills/find-skills，擷取日 2026-11-14）：Gen Agent Trust Hub=Pass、Socket=Pass、Snyk=Warn。Snyk=Warn 仍按業主要求必須安裝；本專案永不自動執行第三方 skill 附帶腳本。",
+  "skills": [
+    {
+      "id": "vercel-labs/skills/find-skills",
+      "name": "find-skills",
+      "required": true,
+      "package_url": "https://github.com/vercel-labs/skills",
+      "install_command": "npx skills add https://github.com/vercel-labs/skills --skill find-skills",
+      "installer_args": ["--skill", "find-skills", "--yes", "--copy", "--json"],
+      "audit_at_lock_time": [
+        { "provider": "Gen Agent Trust Hub", "status": "pass" },
+        { "provider": "Socket", "status": "pass" },
+        { "provider": "Snyk", "status": "warn" }
+      ]
+    }
+  ]
+}
