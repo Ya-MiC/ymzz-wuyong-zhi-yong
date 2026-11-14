@@ -15,7 +15,8 @@ from pathlib import Path
 
 from .security import hash_file
 
-_CORE_SKILL_MD_CANDIDATE_ROOTS = ["skills", ".agents", ".claude", ".cursor", ".codex", "."]
+# DSH 結構：核心技能安裝到 skills/core/<skill>/SKILL.md，優先在此找。
+_CORE_SKILL_MD_CANDIDATE_ROOTS = ["skills/core", "skills", ".agents", ".claude", ".cursor", ".codex", "."]
 
 
 def _resolve_node(node_cmd: str) -> str | None:

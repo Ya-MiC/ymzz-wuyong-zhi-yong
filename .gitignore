@@ -14,12 +14,18 @@ state/
 # skills CLI 安裝產物（第三方內容，由 bootstrap 重建；lock 檔記錄了它們的來源）
 skills/core/
 skills/pool/
-skills-lock.json
-
-# 本地自製 skill 屬於運行時使用者內容：預設不入 git。
-# 若想把自己的 skills 版本化，刪掉下面兩行即可。
+skills/find-skills/
 skills/local-made/*
 !skills/local-made/.gitkeep
+skills-lock.json
+
+# npx skills 安裝到各 agent 目錄的產物（不屬本專案原始碼）
+.agents/skills/find-skills/
+.claude/skills/find-skills/
+.codebuddy/skills/find-skills/
+.hermes/skills/find-skills/
+.windsurf/skills/find-skills/
+.zcode/skills/find-skills/
 
 # 研究暫存
 _research/
