@@ -20,12 +20,15 @@ skills/local-made/*
 skills-lock.json
 
 # npx skills 安裝到各 agent 目錄的產物（不屬本專案原始碼）
-.agents/skills/find-skills/
-.claude/skills/find-skills/
-.codebuddy/skills/find-skills/
-.hermes/skills/find-skills/
-.windsurf/skills/find-skills/
-.zcode/skills/find-skills/
+.agents/skills/
+.claude/skills/
+.codebuddy/skills/
+.hermes/skills/
+.windsurf/skills/
+.zcode/skills/
+skills/agent-browser/
+skills/grill-me/
+skills/hyperframes-cli/
 
 # 研究暫存
 _research/
