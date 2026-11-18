@@ -30,7 +30,8 @@ def test_cross_conversation_provenance():
         idx.save()
         assert e is not None
         assert e["origin_conversation_id"] == "conv-A"
-        assert e["path"] == str(d_a)
+        # Windows runner 可能把 TEMP 解析成 8.3 短檔名（RUNNER~1），路徑字串不可直接相比
+        assert Path(e["path"]).resolve() == Path(d_a).resolve() or Path(e["path"]).samefile(d_a)
         assert "created_at" in e
 
         # 對話 B 命中同一個 skill（跨對話）
