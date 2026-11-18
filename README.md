@@ -46,6 +46,10 @@ flowchart TD
 
 ---
 
+[![M8ven Score](https://m8ven.ai/badge/mcp/ya-mic-ymzz-wuyong-zhi-yong-mgrisr)](https://m8ven.ai/mcp/ya-mic-ymzz-wuyong-zhi-yong-mgrisr?s=readme)
+
+---
+
 ## 快速開始
 
 ### 前置條件
