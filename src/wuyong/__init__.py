@@ -5,7 +5,7 @@
 把「該怎麼做」交給主 agent。
 """
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 __display_name__ = "晏銘湛箴_無用之用"
 __author__ = "晏銘湛箴 (Ya-MiC)"
 __license__ = "MIT"

@@ -39,6 +39,7 @@ python -m wuyong hint --text "幫我找一個現成的 react 技能" --mode act 
 python -m pip install pytest
 pytest -q                # 單元測試（不聯網）
 pytest -m integration    # 需真實聯網（手動，預設不跑）
+node --test tests/test_dsh_tools.mjs   # DSH 插件：六個工具註釋、list/call、execFile 回歸
 ```
 
 ## 注意

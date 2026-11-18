@@ -1,5 +1,10 @@
 # 變更紀錄
 
+## [0.1.1] — 2026-11-18
+- DSH 六個工具皆宣告 MCP ToolAnnotations（readOnlyHint / destructiveHint / idempotentHint / openWorldHint），布林值對應 handler 實際副作用
+- 插件改以 `execFileSync` 傳 argv，不再以 shell 字串執行 `python -m wuyong`；並驗證畸形與中繼字元輸入
+- 新增 `tests/test_dsh_tools.mjs`：以 list/call 覆蓋全部工具名稱、註釋暴露與實際行為
+
 ## [0.1.0] — 2026-11-14
 - 初始版本：晏銘湛箴_無用之用 (wuyong) 常駐子代理
 - 雙通道即時判別（用戶文字 × 模型思考），三種事件 adapter（inline / stdin / jsonl_tail）

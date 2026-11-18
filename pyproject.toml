@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "wuyong"
-version = "0.1.0"
+version = "0.1.1"
 description = "三十輻共一轂——skills.sh 動態 skill 池 × 本地優先路由的常駐子代理（晏銘湛箴_無用之用）"
 readme = "README.md"
 requires-python = ">=3.11"

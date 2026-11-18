@@ -28,6 +28,8 @@
 | `wuyong.local.list` | 列出本地已登記技能 |
 | `wuyong.local.harvest` | 掃描本地技能根目錄並註冊發現的技能 |
 
+每個工具都帶有 MCP `annotations`（`readOnlyHint`、`destructiveHint`、`idempotentHint`、`openWorldHint`），布林值對應實際副作用。
+
 ## 安裝方式
 
 在 DSH Plugin Manager 中選「Add plugin」，指向本資料夾（`dsh-bundle/wuyong`），或執行：

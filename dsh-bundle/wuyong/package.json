@@ -1,6 +1,6 @@
 {
   "name": "@local/wuyong",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "type": "module",
   "description": "晏銘湛箴_無用之用 —— 本地 MCP 常駐子代理（高權限技能），skills.sh 動態技能池",
